@@ -1,0 +1,123 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+/* Light Theme */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --form-bg: #f9f9f9;
+    --button-bg: #007bff;
+    --button-text: #ffffff;
+    --slider-color: #007bff;
+    --input-border: #cccccc;
+    --chart-bg: #ffffff;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    --bg-color: #1f1f1f;
+    --text-color: #e0e0e0;
+    --form-bg: #333333;
+    --button-bg: #1e90ff;
+    --button-text: #ffffff;
+    --slider-color: #1e90ff;
+    --input-border: #555555;
+    --chart-bg: #2a2a2a;
+}
+
+
+/* Body and Layout */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    background-color: var(--form-bg);
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--slider-color);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Slider */
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Thank You Message */
+#thankYouMessage {
+    text-align: center;
+    color: var(--button-bg);
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Dashboard Styles */
+.dashboard {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--chart-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
