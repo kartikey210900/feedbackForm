@@ -32,15 +32,15 @@ Enable Firestore Database.
 In the project settings, copy your Firebase configuration and add it to script.js under the Firebase configuration section.
 Setup Firebase Config: Update the firebaseConfig in script.js with your Firebase project credentials:
 ` javascript
-Copy code <br>
-const firebaseConfig = { <br>
-  apiKey: "YOUR_API_KEY", <br>
-  authDomain: "YOUR_AUTH_DOMAIN", <br>
-  projectId: "YOUR_PROJECT_ID", <br>
-  storageBucket: "YOUR_STORAGE_BUCKET",  <br>
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",  <br>
-  appId: "YOUR_APP_ID"  <br>
-};  ` <br>
+Copy code 
+const firebaseConfig = { 
+  apiKey: "YOUR_API_KEY", 
+  authDomain: "YOUR_AUTH_DOMAIN", 
+  projectId: "YOUR_PROJECT_ID", 
+  storageBucket: "YOUR_STORAGE_BUCKET",  
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",  
+  appId: "YOUR_APP_ID"  
+};  ` 
 Run the Project: Open index.html in your browser to view the feedback form.
 
 # Usage
