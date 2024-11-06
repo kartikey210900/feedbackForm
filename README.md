@@ -1,5 +1,5 @@
-# feedbackForm
-#Feedback Form with Data Analysis and Visualization
+
+# Feedback Form with Data Analysis and Visualization
 A responsive feedback form application that collects user input, processes it, and visualizes the data for easy analysis. This project helps users submit feedback and provides administrators with an interactive dashboard to analyze user sentiment and other feedback attributes.
 
 # Table of Contents
