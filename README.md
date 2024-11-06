@@ -51,11 +51,13 @@ Switch Theme: Toggle between light and dark modes with the button at the top.
 # Screenshots
 
 
-Feedback Form
+# Feedback Form
+![FeedbackForm main Page](./feedbackForm.png)
+# Dark Theme
+![Dark Theme](./darkMode.png)
 
-
-Dashboard
-
+# Dashboard
+![DashBoard main Page](./dashBoard.png)
 # Future Enhancements
 Additional Data Filters: Allow filtering feedback by rating or date range.
 User Authentication: Enable authentication for administrators accessing the dashboard.
