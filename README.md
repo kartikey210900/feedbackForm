@@ -2,7 +2,7 @@
 #Feedback Form with Data Analysis and Visualization
 A responsive feedback form application that collects user input, processes it, and visualizes the data for easy analysis. This project helps users submit feedback and provides administrators with an interactive dashboard to analyze user sentiment and other feedback attributes.
 
-#Table of Contents
+# Table of Contents
 Features
 Tech Stack
 Setup and Installation
@@ -10,18 +10,18 @@ Usage
 Screenshots
 Future Enhancements
 License
-#Features
+# Features
 Responsive Feedback Form: A clean, user-friendly form that adjusts to different screen sizes.
 Data Collection: Stores user responses, ratings, and feedback details.
 Firebase Integration: Utilizes Firebase for backend data storage.
 Data Visualization: Graphs displaying feedback trends, ratings, and other key metrics using Chart.js.
 Light/Dark Theme: Users can toggle between light and dark themes for a better user experience.
 Error Handling and Validation: Ensures required fields are filled, and provides tooltips for better usability.
-#Tech Stack
+# Tech Stack
 Frontend: HTML, CSS, JavaScript
 Backend: Firebase Firestore
 Data Visualization: Chart.js for graphical reports and dashboards
-#Setup and Installation
+# Setup and Installation
 Clone the repository:
 Copy code
 git clone https://github.com/your-username/feedback-form.git
@@ -44,18 +44,18 @@ const firebaseConfig = {
 };
 Run the Project: Open index.html in your browser to view the feedback form.
 
-#Usage
+# Usage
 Submit Feedback: Users can rate their satisfaction, leave comments, and optionally provide name and email.
 View Dashboard: Admins can access the dashboard to see feedback trends, with graphical representation (Bar chart for rating distribution, Line chart for trends over time).
 Switch Theme: Toggle between light and dark modes with the button at the top.
-Screenshots
+# Screenshots
 
 
 Feedback Form
 
 Dashboard
 
-#Future Enhancements
+# Future Enhancements
 Additional Data Filters: Allow filtering feedback by rating or date range.
 User Authentication: Enable authentication for administrators accessing the dashboard.
 Advanced Analytics: Include more complex data analysis features like sentiment analysis.
