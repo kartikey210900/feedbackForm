@@ -15,51 +15,65 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <!-- Theme Toggle Button -->
-    <button id="themeToggle" class="theme-toggle">🌞</button>
-    <h2>Feedback Form</h2>
-    <form id="feedbackForm">
-        <div class="slider">
-            <label for="satisfaction">Satisfaction Level: <i class="fas fa-info-circle" title="Rate your satisfaction from 1 to 5"></i></label>
-            <input type="range" id="satisfaction" name="satisfaction" min="1" max="5" value="3" step="1" />
-            <span id="slider-value">3</span>
+    <div class="container">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle">🌞</button>
+        
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm">
+            <div class="star-rating">
+                <label for="satisfaction">Satisfaction Level:</label>
+                <div id="stars">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <input type="hidden" id="satisfaction" name="satisfaction" value="3" /> <!-- Hidden input to store the rating value -->
+            </div>
+            
+            
+            <!-- Comment Box -->
+            <label for="comment">Comments/Suggestions: <i class="fas fa-comment-dots" title="Share your thoughts"></i></label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+
+            <!-- Optional Information -->
+            <label for="name">Name (Optional): <i class="fas fa-user" title="Your name"></i></label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email (Optional): <i class="fas fa-envelope" title="Your email address"></i></label>
+            <input type="email" id="email" name="email">
+
+            <button type="submit">Submit Feedback</button>
+            <div id="error-message"></div> <!-- Error message section -->
+        </form>
+        <div id="thankYouMessage" style="display: none;">Thank you for your feedback!</div>
+
+
+        <h2>Feedback Dashboard</h2>
+        <div>
+            <label for="ratingFilter">Filter by Rating:</label>
+            <select id="ratingFilter">
+                <option value="all">All</option>
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
         </div>
         
-        <!-- Comment Box -->
-        <label for="comment">Comments/Suggestions: <i class="fas fa-comment-dots" title="Share your thoughts"></i></label>
-        <textarea id="comment" name="comment" rows="4" required></textarea>
-
-        <!-- Optional Information -->
-        <label for="name">Name (Optional): <i class="fas fa-user" title="Your name"></i></label>
-        <input type="text" id="name" name="name">
-        
-        <label for="email">Email (Optional): <i class="fas fa-envelope" title="Your email address"></i></label>
-        <input type="email" id="email" name="email">
-
-        <button type="submit">Submit Feedback</button>
-        <div id="error-message"></div> <!-- Error message section -->
-    </form>
-    <div id="thankYouMessage">Thank you for your feedback!</div>
-
-
-
-    <h2>Feedback Dashboard</h2>
-    <div>
-        <label for="ratingFilter">Filter by Rating:</label>
-        <select id="ratingFilter">
-            <option value="all">All</option>
-            <option value="1">1 Star</option>
-            <option value="2">2 Stars</option>
-            <option value="3">3 Stars</option>
-            <option value="4">4 Stars</option>
-            <option value="5">5 Stars</option>
-        </select>
+        <div class="chart-container">
+            <h3>Satisfaction Rating Distribution</h3>
+            <canvas id="ratingChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h3>Feedback Trends Over Time</h3>
+            <canvas id="trendChart"></canvas>
+        </div>
     </div>
-    
-    <div>
-        <canvas id="ratingChart" width="400" height="200"></canvas>
-        <canvas id="trendChart" width="400" height="200"></canvas>
-    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
