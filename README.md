@@ -61,7 +61,4 @@ Switch Theme: Toggle between light and dark modes with the button at the top.
 Additional Data Filters: Allow filtering feedback by rating or date range.
 User Authentication: Enable authentication for administrators accessing the dashboard.
 Advanced Analytics: Include more complex data analysis features like sentiment analysis.
-#License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
-Feel free to adapt this template with your specific screenshots and repository details. Let me know if you'd like any further customization!
